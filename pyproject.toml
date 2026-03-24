@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "port-killer"
+version = "0.1.0"
+description = "Dead simple CLI to kill processes by port"
+requires-python = ">=3.9"
+dependencies = ["psutil>=5.9"]
+
+[project.scripts]
+port-kill = "port_killer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["port_killer*"]
