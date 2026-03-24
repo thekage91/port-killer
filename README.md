@@ -30,7 +30,7 @@ pip install -e .
 ## Usage
 
 ```bash
-port-kill <port> [--force]
+port-killer <port> [--force]
 ```
 
 ### Examples
@@ -38,7 +38,7 @@ port-kill <port> [--force]
 Kill the process on port 3000 (with confirmation):
 
 ```
-$ port-kill 3000
+$ port-killer 3000
 Port 3000 is used by:
   PID 12345  node  —  node server.js
 
@@ -49,13 +49,13 @@ Killed PID 12345.
 Kill immediately without prompt:
 
 ```bash
-port-kill 8080 --force
+port-killer 8080 --force
 ```
 
 Nothing is running on the port:
 
 ```
-$ port-kill 9999
+$ port-killer 9999
 No process found on port 9999.
 ```
 

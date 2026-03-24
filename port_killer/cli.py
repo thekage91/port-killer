@@ -52,7 +52,7 @@ def kill_process(proc: psutil.Process) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        prog="port-kill",
+        prog="port-killer",
         description="Kill the process listening on a port.",
     )
     parser.add_argument("port", type=int, help="Port number to free")

@@ -10,7 +10,7 @@ requires-python = ">=3.9"
 dependencies = ["psutil>=5.9"]
 
 [project.scripts]
-port-kill = "port_killer.cli:main"
+port-killer = "port_killer.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
